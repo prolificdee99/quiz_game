@@ -64,9 +64,10 @@ def run_quiz(questions):
 
         # Add a blank line for better readability between questions
         print()
+#End of Game Message
+    print("End of Games")
+    print(f"You got {score} out of {len(questions)} questions correct") # Print the final score
 
-    # Print the final score
-    print(f"You got {score} out of {len(questions)} questions correct")
 
 
 # Call the function to run the quiz
