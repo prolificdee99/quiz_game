@@ -8,7 +8,7 @@ PyCharm IDE (optional but recommended)
 #Getting Started
 Clone the repository to your local machine:
 using git bash:
-git clone https://github.com/your-prolificdee99/quiz-game.git
+git clone https://github.com/prolificdee99/quiz-game.git
 
 #Open the project in PyCharm:
 Launch PyCharm.
