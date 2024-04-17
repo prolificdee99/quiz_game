@@ -1,3 +1,4 @@
+# Define a list of dictionaries, each containing a quiz question, options, correct answer, and explanation
 questions = [
     {
         "prompt": " Who developed Python Programming Language?",
@@ -33,20 +34,40 @@ questions = [
 
 
 def run_quiz(questions):
+    # Initialize the score counter
     score = 0
+
+    # Iterate through each question in the list
     for question in questions:
+        # Print the question prompt
         print(question["prompt"])
+
+        # Print each option for the question
         for option in question["options"]:
             print(option)
+
+        # Get user's answer and convert to uppercase
         answer = input("Enter your answer: (A, B, C, D) ").upper()
+
+        # Check if the answer is correct
         if answer == question["answer"]:
+            # Print feedback for correct answer
             print("Correct!")
+            # Increment the score if answer is correct
             score += 1
         else:
+            # Print feedback for incorrect answer
             print("Wrong. The correct answer was:", question["answer"])
+
+        # Print the explanation for the question
         print(question["explanation"])
-        print()  # Add a blank line for better readability
+
+        # Add a blank line for better readability between questions
+        print()
+
+    # Print the final score
     print(f"You got {score} out of {len(questions)} questions correct")
 
 
+# Call the function to run the quiz
 run_quiz(questions)
