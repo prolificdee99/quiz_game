@@ -47,7 +47,7 @@ def run_quiz(questions):
             print(option)
 
         # Get user's answer and convert to uppercase
-        answer = input("Enter your answer: (A, B, C, D) ").upper()
+        answer = input("Enter your answer: (A, B, C, D) : ").upper()
 
         # Check if the answer is correct
         if answer == question["answer"]:
